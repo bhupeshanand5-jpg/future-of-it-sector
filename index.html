@@ -23,7 +23,7 @@
                 <li><a href="#impact">Impact</a></li>
                 <li><a href="#vision">Vision</a></li>
             </ul>
-            <button class="cta-btn">Join the Future</button>
+            <a href="#join" class="cta-btn" style="text-decoration: none;">Join the Future</a>
         </nav>
     </header>
 
@@ -49,22 +49,22 @@
                 <h2>The Convergence of <span>Frontier Tech</span></h2>
             </div>
             <div class="trends-grid">
-                <div class="trend-card">
+                <div class="trend-card" data-title="Autonomous Intelligence" data-detail="AI is evolving from reactive systems to autonomous agents capable of independent decision-making. This includes self-optimizing codebases, autonomous supply chain management, and AI-driven scientific research that operates 24/7 without human intervention.">
                     <div class="icon">🤖</div>
                     <h3>Autonomous Intelligence</h3>
                     <p>AI transitioning from assistants to autonomous agents that manage entire infrastructures.</p>
                 </div>
-                <div class="trend-card">
+                <div class="trend-card" data-title="Quantum Supremacy" data-detail="Quantum computing leverages qubits to perform calculations in seconds that would take classical supercomputers thousands of years. Its future lies in breaking complex encryption, simulating molecular structures for new drugs, and optimizing global logistics at an unprecedented scale.">
                     <div class="icon">⚛️</div>
                     <h3>Quantum Supremacy</h3>
                     <p>Processing power that defies classical physics, unlocking breakthroughs in medicine and encryption.</p>
                 </div>
-                <div class="trend-card">
+                <div class="trend-card" data-title="Edge Computing" data-detail="By processing data closer to the source rather than in a centralized cloud, Edge Computing enables the ultra-low latency required for autonomous vehicles, remote robotic surgery, and immersive AR/VR experiences. It is the backbone of the next industrial revolution.">
                     <div class="icon">☁️</div>
                     <h3>Edge Computing</h3>
                     <p>Decentralizing the cloud to provide near-instant latency for the IoT revolution.</p>
                 </div>
-                <div class="trend-card">
+                <div class="trend-card" data-title="Zero-Trust Security" data-detail="In a hyper-connected world, perimeter-based security is obsolete. Zero-Trust operates on the principle of 'Never Trust, Always Verify,' using biometric authentication, AI threat detection, and micro-segmentation to protect data even within internal networks.">
                     <div class="icon">🛡️</div>
                     <h3>Zero-Trust Security</h3>
                     <p>A paradigm shift in cybersecurity where trust is never assumed, only verified.</p>
@@ -104,6 +104,21 @@
                 </div>
             </div>
         </section>
+        <section id="join" class="join">
+            <div class="join-card">
+                <div class="join-glow"></div>
+                <h2>Ready to <span>Lead the Change?</span></h2>
+                <p>Subscribe to our newsletter for exclusive insights into the future of tech.</p>
+                <form id="join-form">
+                    <div class="input-group">
+                        <input type="text" id="user-name-input" placeholder="Enter your name" required>
+                        <button type="submit" class="submit-btn">Initialize Connection</button>
+                    </div>
+                </form>
+                <div id="form-feedback" class="feedback"></div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -117,6 +132,32 @@
             </div>
         </div>
     </footer>
+
+    <div id="greeting-screen" class="greeting-screen">
+        <div class="greeting-content">
+            <div class="nexus-ring"></div>
+            <h1 class="glitch" data-text="ACCESS GRANTED">ACCESS GRANTED</h1>
+            <h2 id="personal-greeting">Welcome to the Nexus</h2>
+            <p>Your connection to the future is now active.</p>
+            <div class="system-logs">
+                <p>> Syncing digital identity...</p>
+                <p>> Bypassing obsolete protocols...</p>
+                <p>> Integration complete.</p>
+            </div>
+            <button class="return-btn">Return to Interface</button>
+        </div>
+    </div>
+
+    <div id="trend-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <h2 id="modal-title">Trend Title</h2>
+                <div class="modal-glow"></div>
+                <p id="modal-desc">Detailed information goes here...</p>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
